@@ -5,6 +5,19 @@
 
 using namespace std;
 
+void rvereseArray(int arr[], int start, int end)
+{
+    if (start >= end)
+    return;
+     
+    int temp = arr[start];
+    arr[start] = arr[end];
+    arr[end] = temp;
+     
+    // Recursive Function calling
+    rvereseArray(arr, start + 1, end - 1);
+}  
+
 int main(){
 	int a[]={2,3,4,5,6};
 	int b[]={5,9,1,0};
