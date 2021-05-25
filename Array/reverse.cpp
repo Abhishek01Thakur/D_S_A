@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void rvereseArray(int arr[], int start, int end)
+void rvereseArray(int arr[], int start, int end) //recursive method
 {
     if (start >= end)
     return;
