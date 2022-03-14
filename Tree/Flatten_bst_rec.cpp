@@ -1,4 +1,4 @@
-//try to visualize in mind 
+//try to visualize in mind the rightmost node on the right part
 
 void flatten(TreeNode *root, TreeNode *&prev)
     {
