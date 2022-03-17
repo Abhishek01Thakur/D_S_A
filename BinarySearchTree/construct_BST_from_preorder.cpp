@@ -105,3 +105,34 @@ public:
 // };
 
 
+//---------------------------------------------------------
+//      ITERATIVE APPROACH
+//---------------------------------------------------------
+
+
+
+// TreeNode* bstFromPreorder(vector<int>& pre) {
+//       TreeNode *root=NULL;
+//        for(int i=0;i<pre.size();i++){
+//            TreeNode *ptr=new TreeNode(pre[i]);
+//            if(root==NULL){
+//                root=ptr;
+//            }
+//            else{
+//                TreeNode *ptr1=root,*prv=root;
+//                while(ptr1!=NULL){
+//                    prv=ptr1;
+//                    if(ptr1->val>pre[i])
+//                        ptr1=ptr1->left;
+//                    else
+//                        ptr1=ptr1->right;
+//                }
+//                if(prv->val >pre[i])
+//                    prv->left=ptr;
+//                else
+//                    prv->right=ptr;
+//            }
+//        }
+//         return root;
+//     }
+
