@@ -28,6 +28,32 @@ public:
         }
         return false;
     }
+	
+   bool isCycle(int V, vector<int> adj[])  //bina parent check kare
+    {
+        vector<bool> vis(V, false);
+        queue<int> q;
+        int temp;
+        for (int i = 0; i < V; i++)
+        {
+            if (vis[i] == false)
+            {
+                q.push(i);
+                while (!q.empty())
+                {
+                    temp = q.front();
+                    q.pop();
+                    if (vis[temp] == true)
+                        return true;
+                    vis[temp] = true;
+                    for (auto it : adj[temp])
+                        if (vis[it] == false)
+                            q.push(it);
+                }
+            }
+        }
+        return false;
+    }
 public:
 	bool isCycle(int V, vector<int>adj[]){
 	    vector<int> vis(V, 0); 
