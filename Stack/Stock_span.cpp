@@ -6,7 +6,7 @@
 
      res[0]=1;
      s.push(0);   //pushed indices in the stack
-
+                  // APPROACH used of next greater element on left
      for(int i=1; i < n ; i++){
 
          while(!s.empty() && arr[i] > arr[st.top()]){
