@@ -7,3 +7,4 @@ for 2, answer is 2 -> ()(), (())
 for 3, asnwer is 5 -> ()()(), () (()), (())(), (()()), ((()))
 
 ![image](https://user-images.githubusercontent.com/69719886/188380744-d61dd8a4-5728-4059-b210-f0fe2c76040c.png)
+![image](https://user-images.githubusercontent.com/69719886/188381601-2a257e99-70a1-407c-90b7-710471ad6b60.png)
