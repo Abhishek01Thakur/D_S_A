@@ -35,16 +35,16 @@ public class targetSum {
 					if(dp[i-1][j]=true)
 						dp[i][j]=true;
 					else {
-              int curr = arr[i-1];
+					      int curr = arr[i-1];
 
-              if(j >= curr) {
-                if(dp[i-1][j-curr]==true) {
-                  dp[i][j]=true;
-                }
-                else {
-                  dp[i][j]=false;
-                }
-              }
+					      if(j >= curr) {
+						if(dp[i-1][j-curr]==true) {
+						  dp[i][j]=true;
+						}
+						else {
+						  dp[i][j]=false;
+						}
+					      }
 					}
           
 				}	
