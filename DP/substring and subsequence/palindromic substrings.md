@@ -8,8 +8,13 @@ A substring is a contiguous sequence of characters within the string.
 ![image](https://user-images.githubusercontent.com/69719886/191326061-88e1e57b-b386-481f-be0b-329323a5e5db.png)
 
   
-class Solution {
-public:
+
+
+
+
+
+
+
     int countSubstrings(string s) {
         int res=0;
         bool dp[s.size()][s.size()];
@@ -34,4 +39,3 @@ public:
         
         return res;
     }
-};
